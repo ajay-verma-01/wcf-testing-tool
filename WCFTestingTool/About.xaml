@@ -1,0 +1,17 @@
+﻿<Window x:Class="WCFTestingTool.About"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="About" Height="200" Width="300" 
+     ShowInTaskbar="False" ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="txtAbout" Grid.Column="0" Grid.Row="0"/>
+        <Button x:Name="btnOk" Content="Ok"  Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" Width="80" Click="btnOk_Click" />
+    </Grid>
+</Window>

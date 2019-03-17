@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+        <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="WCFTestingTool.Settings" type="System.Configuration.ClientSettingsSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+        </sectionGroup>
+    </configSections>
+    <userSettings>
+        <WCFTestingTool.Settings>
+            <setting name="ProxyAssemblyPath" serializeAs="String">
+                <value>C:\Windows\Temp\TempProxy.dll</value>
+            </setting>
+            <setting name="SvcCmdParameter" serializeAs="String">
+                <value>/directory:C:\Windows\Temp /out:TempProxy.cs /config:app.config</value>
+            </setting>
+            <setting name="SvcUtilFilePath" serializeAs="String">
+                <value>C:\Program Files\Microsoft SDKs\Windows\v6.0A\bin\SvcUtil.exe</value>
+            </setting>
+            <setting name="CscCmdParameter" serializeAs="String">
+                <value> /t:library /out:C:\Windows\Temp\TempProxy.dll  C:\Windows\Temp\TempProxy.cs</value>
+            </setting>
+            <setting name="CscFilePath" serializeAs="String">
+                <value>C:\WINDOWS\Microsoft.NET\Framework\v3.5\csc.exe</value>
+            </setting>
+            <setting name="BaseServiceClassName" serializeAs="String">
+                <value>System.ServiceModel.ClientBase`1</value>
+            </setting>
+            <setting name="CreateChannel" serializeAs="String">
+                <value>CreateChannel</value>
+            </setting>
+            <setting name="Client" serializeAs="String">
+                <value>Client</value>
+            </setting>
+            <setting name="ProxyClassPath" serializeAs="String">
+                <value>C:\Windows\Temp\TempProxy.cs</value>
+            </setting>
+            <setting name="ConfigFileFilter" serializeAs="String">
+                <value>Data Sources (*.config, *.xml)|*.config*;*.xml|All Files|*.*</value>
+            </setting>
+            <setting name="ConfigFileExt" serializeAs="String">
+                <value>.config</value>
+            </setting>
+            <setting name="ConfigFilePath" serializeAs="String">
+                <value>C:\Windows\Temp\app.config</value>
+            </setting>
+        </WCFTestingTool.Settings>
+    </userSettings>
+</configuration>
